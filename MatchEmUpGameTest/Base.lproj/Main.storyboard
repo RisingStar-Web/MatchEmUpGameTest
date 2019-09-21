@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kma-Gh-Ejg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="MatchEmUpGameTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="V9J-0y-FJN">
+                                <rect key="frame" x="0.0" y="0.0" width="377" height="667"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LEt-Xu-w8j">
+                                <rect key="frame" x="10" y="80" width="355" height="537"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="1" id="y0B-WT-0P9">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coollogo_com-28500453.png" translatesAutoresizingMaskIntoConstraints="NO" id="scK-XZ-C5q">
+                                <rect key="frame" x="10" y="20" width="355" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kP6-HQ-eRM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaZ-St-RKj">
+                                <rect key="frame" x="113.5" y="617" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="5MM-iy-7Wo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-js-eBb">
+                                <rect key="frame" x="16" y="627" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="81i-GP-0Lv"/>
+                                    <constraint firstAttribute="width" constant="80" id="FCi-Z4-k1f"/>
+                                </constraints>
+                                <state key="normal" image="coollogo_com-19170552.png"/>
+                                <connections>
+                                    <action selector="backButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vkn-c2-KeJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LEt-Xu-w8j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="0as-Al-ZCt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YaZ-St-RKj" secondAttribute="bottom" id="5Ug-J1-OGw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LEt-Xu-w8j" secondAttribute="bottom" constant="50" id="8sk-rM-dke"/>
+                            <constraint firstItem="YaZ-St-RKj" firstAttribute="centerX" secondItem="V9J-0y-FJN" secondAttribute="centerX" id="KzU-tw-2vG"/>
+                            <constraint firstItem="V9J-0y-FJN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Mk7-hG-FT8"/>
+                            <constraint firstItem="scK-XZ-C5q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rpq-Zq-YeS"/>
+                            <constraint firstItem="YaZ-St-RKj" firstAttribute="top" secondItem="LEt-Xu-w8j" secondAttribute="bottom" id="XOg-Ti-WZ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LEt-Xu-w8j" secondAttribute="trailing" constant="10" id="ZEy-3g-S0d"/>
+                            <constraint firstItem="V9J-0y-FJN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="daP-Sj-dgD"/>
+                            <constraint firstItem="LEt-Xu-w8j" firstAttribute="top" secondItem="scK-XZ-C5q" secondAttribute="bottom" id="euM-gL-Y5h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="scK-XZ-C5q" secondAttribute="trailing" constant="10" id="gTc-Rh-09E"/>
+                            <constraint firstItem="TaM-js-eBb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ky1-CA-Ne7"/>
+                            <constraint firstItem="TaM-js-eBb" firstAttribute="centerY" secondItem="YaZ-St-RKj" secondAttribute="centerY" id="nQs-Jx-1io"/>
+                            <constraint firstItem="V9J-0y-FJN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="2" id="qOv-kW-fKO"/>
+                            <constraint firstItem="scK-XZ-C5q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="v7O-iP-qVz"/>
+                            <constraint firstItem="V9J-0y-FJN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="z5z-4d-Qnq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="TaM-js-eBb" id="5F1-TD-Aqq"/>
+                        <outlet property="backImageView" destination="V9J-0y-FJN" id="FtI-do-d4J"/>
+                        <outlet property="collectionView" destination="LEt-Xu-w8j" id="yKN-ey-IlM"/>
+                        <outlet property="levelLabel" destination="YaZ-St-RKj" id="D1j-vx-Oy3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="132"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="q71-cv-ZCM">
+            <objects>
+                <viewController id="Kma-Gh-Ejg" customClass="StartViewController" customModule="MatchEmUpGameTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fIW-1G-ApJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="MFM-Re-G0h">
+                                <rect key="frame" x="0.0" y="0.0" width="377" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzJ-O0-5m8">
+                                <rect key="frame" x="62.5" y="318.5" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.086313821380000003" green="0.19304808970000001" blue="0.1019460633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="82E-Qs-cex"/>
+                                    <constraint firstAttribute="height" constant="50" id="eKh-9i-YYP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="34"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="iHq-eq-whU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coollogo_com-28500453.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xwc-27-zrF">
+                                <rect key="frame" x="10" y="20" width="355" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="iNZ-1Q-OrW"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r6-v6-Ccz">
+                                <rect key="frame" x="62.5" y="378.5" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.086313821380000003" green="0.19304808970000001" blue="0.1019460633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="frQ-vd-PCq"/>
+                                    <constraint firstAttribute="width" constant="250" id="zRI-6B-7g7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="34"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonDidTap:" destination="Kma-Gh-Ejg" eventType="touchUpInside" id="q6Q-Ek-2j1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O5r-pf-bal" firstAttribute="trailing" secondItem="Xwc-27-zrF" secondAttribute="trailing" constant="10" id="Btk-5Q-hjy"/>
+                            <constraint firstItem="1r6-v6-Ccz" firstAttribute="top" secondItem="UzJ-O0-5m8" secondAttribute="bottom" constant="10" id="GEp-Yu-mJy"/>
+                            <constraint firstItem="MFM-Re-G0h" firstAttribute="trailing" secondItem="O5r-pf-bal" secondAttribute="trailing" constant="2" id="GnP-rm-gUM"/>
+                            <constraint firstItem="MFM-Re-G0h" firstAttribute="top" secondItem="fIW-1G-ApJ" secondAttribute="top" id="KYb-fF-tCC"/>
+                            <constraint firstItem="UzJ-O0-5m8" firstAttribute="centerY" secondItem="O5r-pf-bal" secondAttribute="centerY" id="TEv-ea-sgq"/>
+                            <constraint firstItem="Xwc-27-zrF" firstAttribute="leading" secondItem="O5r-pf-bal" secondAttribute="leading" constant="10" id="YUt-ds-H5J"/>
+                            <constraint firstItem="MFM-Re-G0h" firstAttribute="leading" secondItem="O5r-pf-bal" secondAttribute="leading" id="ex1-KJ-E14"/>
+                            <constraint firstItem="MFM-Re-G0h" firstAttribute="bottom" secondItem="O5r-pf-bal" secondAttribute="bottom" id="gN5-Uv-s6F"/>
+                            <constraint firstItem="1r6-v6-Ccz" firstAttribute="centerX" secondItem="UzJ-O0-5m8" secondAttribute="centerX" id="iNW-Qp-9ap"/>
+                            <constraint firstItem="Xwc-27-zrF" firstAttribute="top" secondItem="O5r-pf-bal" secondAttribute="top" id="sM1-Ec-50p"/>
+                            <constraint firstItem="UzJ-O0-5m8" firstAttribute="centerX" secondItem="O5r-pf-bal" secondAttribute="centerX" id="xVs-gJ-pgB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O5r-pf-bal"/>
+                    </view>
+                    <connections>
+                        <outlet property="resetButton" destination="1r6-v6-Ccz" id="qcl-UD-Agn"/>
+                        <outlet property="startGameButton" destination="UzJ-O0-5m8" id="lSb-13-gcq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2a-VR-Pbh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back.png" width="1400" height="2228"/>
+        <image name="coollogo_com-19170552.png" width="325" height="124"/>
+        <image name="coollogo_com-28500453.png" width="641" height="129"/>
+    </resources>
+</document>

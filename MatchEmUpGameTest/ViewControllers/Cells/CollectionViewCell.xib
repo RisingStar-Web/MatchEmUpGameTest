@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="MatchEmUpGameTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="419"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="419"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XJ6-nD-GgT">
+                        <rect key="frame" x="0.0" y="0.0" width="427" height="419"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rubaha3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="phT-Ra-DUN">
+                        <rect key="frame" x="0.0" y="0.0" width="427" height="419"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="phT-Ra-DUN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6qh-9j-u8o"/>
+                <constraint firstAttribute="trailing" secondItem="XJ6-nD-GgT" secondAttribute="trailing" id="GWP-BE-H0U"/>
+                <constraint firstItem="phT-Ra-DUN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Pxe-IE-L4r"/>
+                <constraint firstAttribute="bottom" secondItem="phT-Ra-DUN" secondAttribute="bottom" id="fyc-qH-LLT"/>
+                <constraint firstItem="XJ6-nD-GgT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gEe-bx-T7N"/>
+                <constraint firstItem="XJ6-nD-GgT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oWU-ot-gH9"/>
+                <constraint firstAttribute="bottom" secondItem="XJ6-nD-GgT" secondAttribute="bottom" id="uUl-Kl-NPN"/>
+                <constraint firstAttribute="trailing" secondItem="phT-Ra-DUN" secondAttribute="trailing" id="wlT-v2-q3Z"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="427" height="419"/>
+            <connections>
+                <outlet property="coverView" destination="phT-Ra-DUN" id="qBA-kr-KLD"/>
+                <outlet property="imageView" destination="XJ6-nD-GgT" id="Wmi-Pq-BI2"/>
+            </connections>
+            <point key="canvasLocation" x="196" y="158.77061469265368"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="rubaha3.jpg" width="400" height="400"/>
+    </resources>
+</document>
